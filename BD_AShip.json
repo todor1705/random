@@ -1,0 +1,109 @@
+{"vehicle": [
+    {
+        "name": "The Jabberwock",
+        "source": "Me",
+        "page": 0,
+        "vehicleType": "SHIP",
+        "terrain": [
+            "air, water"
+        ],
+        "size": "G",
+        "dimensions": [
+            "90 ft.",
+            "30 ft."
+        ],
+        "capCrew": 5,
+        "capPassenger": 60,
+        "capCargo": 80,
+        "immune": [
+            "poison",
+            "psychic"
+        ],
+        "conditionImmune": [
+            "blinded",
+            "charmed",
+            "Deafened", 
+            "Exhaustion",
+            "Frightened", 
+            "Incapacitated", 
+            "Paralyzed", 
+            "Petrified", 
+            "Poisoned", 
+            "Prone", 
+            "Stunned", 
+            "Unconscious" 
+        ],
+        "pace": 12,
+        "str": 20,
+        "dex": 7,
+        "con": 18,
+        "int": 0,
+        "wis": 0,
+        "cha": 0,
+        "action": [
+            "On its turn, the ship can take 3 actions, choosing from the options below. It can take only 2 actions if it has fewer than four crew and only 1 action if it has fewer than two It can't take these actions if it has no crew.",
+            "Fire Amethyst Cannon (Front). The ship can fire its Amethyst Cannon",
+            "Fire Amethyst Cannon (Back). The ship can fire its Amethyst Cannon",
+            "Move. The ship can use its helm to move with its sails."
+        ],
+        "actionThresholds": {
+            "0": 0,
+            "1": 1,
+            "2": 3,
+            "3": 5
+        },
+        "hull": {
+            "ac": 18,
+            "hp": 320,
+            "dt": 20
+        },
+        "control": [
+            {
+                "name": "Helm",
+                "ac": 18,
+                "hp": 50,
+                "dt": 0,
+                "entries": [
+                    "Move up to the speed of its sails, with one 90-degree turn. If the helm is destroyed, the ship can't turn."
+                ]
+            }
+        ],
+        "movement": [
+            {
+                "name": "Astral Sails",
+                "ac": 12,
+                "hp": 150,
+                "hpNote": "-5 ft. speed per 25 damage taken ",
+                "isControl": false,
+                "speed": [
+                    {
+                        "mode": "air, water",
+                        "entries": [
+                            "120 ft.; 40 ft. while sailing into the wind; 180 ft. while sailing with the wind."
+                        ]
+                    }
+                ]
+            }
+        ],
+        "weapon": [
+            {
+                "name": "Amethyst Cannon",
+                "count": 2,
+                "ac": 16,
+                "hp": 80,
+                "dt": 0,
+                "entries": [
+                    "Ranged Weapon Attack: +12 to hit, range 350/750 ft., one target. Hit: 44 (8d10) force damage."
+                ]
+            }
+        ],
+        "other": [
+            {
+                "name": "",
+                "entries": [
+                    ""
+                ]
+            }
+        ]
+    }
+]}
